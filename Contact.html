@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <Meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+   <style>
+*{
+   margin: 0;  
+   padding: 0;
+}
+ header{
+     width: 100%;
+     height : 60px;
+     background : #ECA983;
+     
+     
+}
+.Sthjrhzmn{
+widht:30%;
+float:left;
+color:#fff;
+font-weight:bold;
+text-tranform:uppercase;
+line-height:60px;
+font-size:35px;
+font-family:cursive;
+}
+nav{
+ 
+ width:68%;
+ float : right;
+ 
+}
+nav ul{
+list-style : none;
+float : right;
+
+}
+nav ul li{
+display: inline-block;
+
+}
+nav ul li a{
+text-decoration: none;
+color:#fff;
+font-family : sans-serif;
+font-weight : bold;
+margin : 0 10px;
+line-height:60px;
+text-transform:uppercase;
+}
+</style>
+
+
+</head>
+
+<body>
+<header>
+<div class ="Sthjrhzmn">Sthjrhzmn</div>    
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="About.html">About</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="Contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<body>
+
+<br>
+<br>
+
+
+<div class="alert info">
+  <span class="closebtn">&times;
+</span>
+  <strong>Message Sent!</strong> Thank you for supporting me!
+</div>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+<tr>
+<tr>
+
+<div  class="contact-section">
+  <div  class="contact-info">
+    <div><i class="fas fa-map-marker-alt"></i>LOT 1639,JLN MEGA,KG LABOHAN DAGANG,42700 BANTING, SELANGOR</div>
+    <div><i class="fas fa-envelope"></i>hajarhazeman01@gmail.com</div>
+    <div><i class="fas fa-phone"></i>+60 17305 3504</div>
+</div>
+<dic class="contact-form">
+<h2>Contact Me</h2>
+ <form class="contact" action=""  method="post">
+  <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+   <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+   <input type="submit" name="submit" class="send-btn" value="Send">
+</form>
+</div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizzing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+body{
+   
+   background: #FFDFD3;
+   
+}
+
+.contact.section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info{
+  color: #DB8668 ;
+  max-widht: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.contact-info i{
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 25%;
+}
+
+.contact-form{
+  max-widht: 80px;
+  margin-right: 50px;
+}
+
+.contact-info, .contact-form{
+  flex: 1;
+}
+
+.contact-form h2{
+ color: #C8826A;
+ text-align: center;
+ font-size : 35px;
+ text-transform: uppercase;
+ margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+  background :#000;
+  color: #fff;
+  border: none;
+  width: calc(30% -10px);
+  height: 30px;
+  padding: 12px;
+  font-size: 15px;
+  border-align= center;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+ 
+.contact-form, text-box:first-child{
+  margin-right: 15px;
+}
+
+.contact-form textarea{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 70%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 180px;
+  max-height: 300px;
+  resize: vertical;
+  border-shadow: 0 1px 1px rgba(0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .send-btn{
+  float: center;
+  background: #2E94E3;
+  color: #fff;
+  border: none;
+  widht: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor:pointer;
+  transition-property: background;
+}
+.contact-form .send-btn:hover{
+  background: #0582E3;
+}
+@media screen and (max-width: 950px){
+.contact-section{
+   flex-direction: column;
+ }
+
+.contact-info, .contact-form{
+  margin: 30px 50px;
+}
+.contact-form h2{
+  font-size: 30px;
+}
+
+.contact-form  .text-box{
+  width: 100%;
+ }
+
+.alert {
+  padding: 20px;
+  background-color: #B2DBDD;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #B2DBDD;}
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+</style>
+
+</body>
+</html>

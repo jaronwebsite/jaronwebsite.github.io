@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+<style>
+*{
+   margin: 0;  
+   padding: 0;
+}
+ header{
+     height : 60px;
+     background : #ECA983 ;
+     padding: 0 50px;
+}
+.Sthjrhzmn{
+widht:30%;
+float:left;
+color:#fff;
+font-weight:bold;
+text-tranform:uppercase;
+line-height:60px;
+font-size:35px;
+font-family:cursive;
+}
+nav{
+ width:68%;
+ float : right;
+}
+nav ul{
+list-style : none;
+float : right;
+}
+nav ul li{
+display: inline-block;
+}
+nav ul li a{
+text-decoration: none;
+color:#fff;
+font-family : sans-serif;
+font-weight : bold;
+margin : 0 10px;
+line-height:60px;
+text-transform:uppercase;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class ="Sthjrhzmn">Sthjrhzmn</div>    
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="About.html">About</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="Contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+
+</header>
+<div class="hero-image"></div>
+<div class="content">
+  <div class="left-col">
+    <h1>I am<br>Siti Hajar<br></h1>
+  </div>
+   <div class="right-col">
+      <p>Listen My Fav Song</p>
+       <img src="play1.png" id="icon">
+</div>
+</div>
+ </div>
+
+<audio id="mySong">
+    <source src= "song.mp3" type="audio/mp3">
+     <source src= "song.mp3" type="audio/mp3">
+</audio>
+
+<script>
+     var mySong = document.getElementById("mySong");
+     var icon = document.getElementById("icon");
+
+      icon.onclick = function(){
+          if(mySong.paused){
+               mySong.play();
+                 icon.src= "pause.png";
+             }else{
+                 mySong.pause();
+                 icon.src= "play1.png";
+            
+  }   
+}
+</script>
+
+<style>
+
+body, html {
+    height: 100%;
+}
+
+
+.hero-image {
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("siti.jpg");
+
+ 
+  height: 100%;
+
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+}
+.content{
+   width: 100%;
+   position: absolute;
+   top: 30%;
+}
+.left-col{
+    margin-left: 6%;
+}
+
+.left-col h1{
+    font-size: 90px;
+    color: #F3D3A5;
+    line-height: 110px;
+    float: left;
+}
+.right-col {
+   float : right;
+   margin-right: 6%;
+   margin-top: 120px;
+   display: flex;
+   align-items: center;
+}
+.right-col p{
+   font-size: 18px;
+   color: #F3D3A5;
+   font-weight: 400;
+   margin-right: 15px;
+}
+#icon{
+  width:80px;
+  cursor: pointer;
+
+}
+
+<div class="banner".
+<img src= "siti.jpg" alt="">
+</body>
+</html>
